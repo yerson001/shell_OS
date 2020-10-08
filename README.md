@@ -1,0 +1,1 @@
+#Simulacon de terminal linux
