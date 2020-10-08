@@ -1,0 +1,14 @@
+ls
+date
+ls | grep u
+date
+ls
+cat in.txt
+cat history
+cat histori.txt
+cat history.txt
+!!
+cat history.txt
+ls | grep i
+ls | grep u
+exit

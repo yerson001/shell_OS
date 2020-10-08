@@ -1,0 +1,6 @@
+a.out
+history.txt
+in.txt
+main.c
+out.txt
+
