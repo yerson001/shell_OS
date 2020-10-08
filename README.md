@@ -15,11 +15,11 @@
 ~~~
 %> ls | grep u
 ~~~
-##  < almacenar el resultado en otro archivo
+##  '<' almacenar el resultado en otro archivo
 ~~~
 %> ls > in.txt
 ~~~
-## !! ultima linea de comando
+## '!!' ultima linea de comando
 ~~~
 %> !!
 ~~
@@ -27,7 +27,7 @@
 ~~~
 %>cat history.txt
 ~~~
-## & fork
+## '&' fork()
 ~~~
 %> "instrucion " &
 ~~~
