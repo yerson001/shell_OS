@@ -22,8 +22,8 @@
 ## '!!' ultima linea de comando
 ~~~
 %> !!
-~~
-## histial (se almacena en un .txt)
+~~~
+## historial (se almacena en un .txt)
 ~~~
 %>cat history.txt
 ~~~
