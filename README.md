@@ -1,29 +1,29 @@
 # Simulacon de terminal linux
 ![img](https://github.com/yerson001/shell_OS/blob/main/shell.PNG)
-## compilar
+## CoMPLILAR
 ~~~
 ##: gcc main.c -std=c99
 ##: ./a.out
 ~~~
-## comandos simples
+## COMANDOS SIMPLES
 ~~~
 %> ls
 %> date
 %> grep u
 ~~~
-## con pipes
+## USANDO PIPE 
 ~~~
 %> ls | grep u
 ~~~
-##  '<' almacenar el resultado en otro archivo
+##  '<' ALMACENAR EN UN ARCHIVO 
 ~~~
 %> ls > in.txt
 ~~~
-## '!!' ultima linea de comando
+## '!!' ULTIMA LINEA
 ~~~
 %> !!
 ~~~
-## historial (se almacena en un .txt)
+## HISTORIAL (se almacena en un .txt)
 ~~~
 %>cat history.txt
 ~~~
@@ -31,6 +31,14 @@
 ~~~
 %> "instrucion " &
 ~~~
+## SIGNAL (kill())
+~~~
+//parar (id proces)
+%> parar 2546
+//continuar
+%> continuar 2546
+~~~
+![img](https://github.com/yerson001/shell_OS/blob/main/kill.gif)
 ## salir
 ~~~
 %> exit
