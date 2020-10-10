@@ -12,3 +12,46 @@ cat history.txt
 ls | grep i
 ls | grep u
 exit
+ls
+la 
+ls | grep u
+date
+cat in.txt
+!!
+cat in.txt
+exit
+parar
+parar 134
+exit
+parar 12
+exit
+parar 1
+parar 2453
+[A
+
+parar 2453
+exit
+parar 2539
+exit
+exit
+parar 2539
+exi
+kill -18 2539
+exit
+ps -la
+parar 2539
+continuar 2539
+exit
+ps -la
+para 2539
+parar 2539
+continuar 2539
+exit
+ps -la
+parar 2539
+continuar 2539
+exit
+ps -la
+parar 2539
+continuar 2539
+exit

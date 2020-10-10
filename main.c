@@ -5,7 +5,9 @@
 #include <wait.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <fcntl.h> 
+#include <fcntl.h>
+#include <signal.h>
+
 #define MAX_LINE 1024            
 int EsperaPadreWait = 1;           
 int input_ = 0;    
@@ -15,6 +17,8 @@ int in, infile_index, out, outfile_index; //direccion de los files
 int Pipe_start, Pipe_Simbolo, Second_comand;      
 
 int quit = 0;
+char *P_I_D;
+int p_i_d;
 int empty_command = 0;
 int command_count = 0;
 
@@ -40,6 +44,7 @@ int main(void) {
 
     while(should_run && quit == 0) {   
         Init();
+        //kill(2539,SIGSTOP);
         printf("$>> ");
         memset(command, 0, MAX_LINE);
         fgets (command, MAX_LINE, stdin);
@@ -51,6 +56,24 @@ int main(void) {
         else {
             strcpy(ComandActual, command);
             SplitCommand(ComandActual, args);
+  
+            //=============history=================
+            if(strcmp(args[0],"parar")==0) {
+                    //print_history();
+                    printf("stop: %s\n",args[1]);
+                    P_I_D = args[1]; 
+                    p_i_d = atoi(P_I_D);
+                    kill(p_i_d,SIGSTOP);
+             continue;
+            }
+             else if(strcmp(args[0],"continuar")==0) {
+                    //print_history();
+                    printf("restart: %s\n",args[1]);
+                    P_I_D = args[1];
+                    p_i_d = atoi(P_I_D);
+                    kill(p_i_d,SIGCONT);
+             continue;
+            }
 
             int history_cmd = 0;
             for(int i=0; args[i] != NULL; i++) {
@@ -250,7 +273,7 @@ void SplitCommand(char * command, char ** args) {
 
         }    
     }  
-    /*
+/*    
     for(int i=0; i< it; i++)
         printf("args[%d]:%s\n", i, args[i]);
 */
