@@ -1,6 +1,6 @@
 # Simulacon de terminal linux
 ![img](https://github.com/yerson001/shell_OS/blob/main/shell.PNG)
-## CoMPLILAR
+## COMPILAR
 ~~~
 ##: gcc main.c -std=c99
 ##: ./a.out
