@@ -19,7 +19,7 @@
 ~~~
 %> ls > in.txt
 ~~~
-## '!!' ULTIMA LINEA
+## '!!' ULTIMA LINEA DE INSTRUCCION (ejecuta la ultima instrucion del shell)
 ~~~
 %> !!
 ~~~
